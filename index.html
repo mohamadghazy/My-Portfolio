@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohamad Ghazy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohamad Ghazy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="hero">
+      <div class="section__pic-container">
+        <img src="./assets/mohamadyasser.png" alt="the profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohamad Yasser Ghazy</h1>
+        <p class="section__text__p2">Driving efficiency, one system at a time.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color"
+            onclick="window.open('./assets/Ghazy Resume 2025.pdf'),window.open('./assets/Ghazy CV 2025.pdf') "
+          >
+            Download Resume/CV
+          </button>
+          <button class="btn btn-color" onclick="location.href='mailto:mohamadyasser515@gmail.com'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedinc.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/mghazy515/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/mohamadsup')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="about-details-container">
+      <!-- Logos Section -->
+  <div class="logos-container">
+    <div class="logo" id="must" onclick="showText('must')">
+      <img src="./assets/must_logo.png" alt="MUST Logo" />
+    </div>
+    <div class="logo" id="postgrad" onclick="showText('postgrad')">
+      <img src="./assets/ain_shams_logo.png" alt="Coursera Logo" />
+    </div>
+    <div class="logo" id="google" onclick="showText('google')">
+      <img src="./assets/google_logo.png" alt="Google Logo" />
+    </div>
+    <div class="logo" id="eva-pharma" onclick="showText('eva-pharma')">
+      <img src="./assets/eva_pharma_logo.png" alt="EVA Pharma Logo" />
+    </div>
+
+  </div>
+
+  <!-- Information Box -->
+  <div class="info-box" id="infoBox">
+    <p id="infoText">Click on a logo to learn more.</p>
+  </div>
+      
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/achievements.png"
+            alt="achievements icon"
+            class="icon"
+          />
+          <h3>Achievements</h3>
+          <p style="text-align: justify;"> 
+             <br /> - <strong>(Jun 2023)</strong> Recognized for my instrumental contributions in implementing Labware LIMS for R&D Labs. 
+             <br /> - <strong>(Nov 2023)</strong> Development of a cost-effective instrument logbook module in Labware LIMS.
+             <br /> - <strong>(Dec 2023)</strong> Development of the Workload Capacity Monitoring System.
+             <br /> - <strong>(Dec 2024)</strong> Development of the NPD Project Management System.
+             <br /> - <strong>(Jun 2025)</strong> Building an ML Model to predict Workload for Resource Planning.
+            </p>
+        </div>
+        <div class="details-container">
+          <img
+            src="./assets/languages.png"
+            alt="languages icon"
+            class="icon"
+          />
+          <h3>Languages</h3>
+          <p> <br />Arabic (Native)<br />
+            English (Bilingual)<br /> 
+            Spanish (Beginner) </p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+         I am a results-driven R&D Analytics Specialist with a robust background in data analytics, and system automation.
+         <br /> <strong>My 4+ years of experience</strong> allows me to design innovative data solutions that: 
+         <br />enhance operational efficiency, drive decision-making, and support scalable business growth. 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Nav -->
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#experience'"
+  />
+     <img
+    src="./assets/top_icon.png"
+    alt="Arrow icon top"
+    class="icon top"
+    onclick="location.href='./'"
+  />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming & Data Analytics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/icons8-html-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons8-css-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons8-javascript-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons8-sql-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/R_logo.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons8-python-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pandas.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons8-numpy-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>NumPy</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/scikit-learn.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Scikit-learn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+                            <article>
+                <img
+                  src="./assets/tensorflow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>tensorflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Visualization & Collaboration</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/Ggplot2.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ggplot2</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/icons8-matplotlib-48.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/seaborn.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Seaborn</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/powerbipng.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/msp.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Project</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jira.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jira</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Additional Nav -->
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+     <img
+    src="./assets/top_icon.png"
+    alt="Arrow icon top"
+    class="icon top"
+    onclick="location.href='./'"
+  />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                id="project-img1"
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+                data-gif="./assets/project-1.gif"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="overlay" id="overlay"></div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='./assets/project-1.gif'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                id="project-img"
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+                data-gif="./assets/project-2.gif"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="overlay" id="overlay"></div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                id="project-img"
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+                data-gif="./assets/project-3.gif"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="overlay" id="overlay"></div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Additional Nav -->
+     <img
+    src="./assets/top_icon.png"
+    alt="Arrow icon top"
+    class="icon top"
+    onclick="location.href='./'"
+  />
+    <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/emailc.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mohamadyasser515@gmail.com">mohamadyasser515@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedinc.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mghazy515/" target="_blank">LinkedIn</a></p>
+        </div>
+         <div class="contact-info-container">
+          <img
+            src="./assets/call2.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+201140028561">Prefer a call?, call me!</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="./">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Mohamad Ghazy. All Rights Reserved.
+        <br />Icons by <a href="https://icons8.com/" target="_blank">Icons8.</a></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
