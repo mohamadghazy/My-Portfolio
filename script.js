@@ -10,12 +10,16 @@ function showText(logo) {
 
   if (logo === 'google') {
     infoText.textContent = "I am Certified Data Analytics Professional from Google";
+    infoBox.style.animation = 'none';
   } else if (logo === 'postgrad') {
     infoText.textContent = "Currently pursuing my M.Sc in Information Systems from Ain-Shams University Faculty of Computer Science";
+    infoBox.style.animation = 'none';
   } else if (logo === 'eva-pharma') {
     infoText.textContent = "I have 4+ years of experience in Data Analytics at Eva Pharma, one of the fastest-growing pharmaceutical company in the region.";
+    infoBox.style.animation = 'none';
   } else if (logo === 'must') {
     infoText.textContent = "I got my B.Sc. in Biotechnology from Misr University for Science and Technology (MUST) with GPA 3.89 (Excellent with Honors)";
+    infoBox.style.animation = 'none';
   }
 }
 

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 2000px) {
   #hero {
     height: 83vh;
     width: 83%;
@@ -13,7 +13,7 @@
   }
   #contact,
   #projects {
-    height: fit-content;
+    height: 75vh;
   }
   .text-container {
     text-align: justify;
@@ -34,6 +34,9 @@
   #hero,
   .section-container {
     display: block;
+  }
+    #contact {
+    height: 72.5vh;
   }
 
   section,
@@ -73,9 +76,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  #contact {
+    height: 72.5vh;
   }
   #hero {
     height: 83vh;
@@ -88,7 +90,11 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers,
+  .about-containers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
@@ -120,6 +126,7 @@
   }
   .text-container {
     text-align: justify;
+    padding-bottom: 5rem;
   }
  .logos-container {
     flex-direction: row; 
@@ -128,5 +135,19 @@
   .logo img {
     width: 50px; 
     height:50px;
+  }
+  .arrow {
+    position: absolute;
+    right: 0rem;
+    bottom: 0.5rem;
+  }
+  .top {
+    position: absolute;
+    right: 0rem;
+    bottom: 2rem;
+  }
+  .experience-details-container {
+    margin-top: 2rem;
+    padding-bottom: 2.3rem;
   }
 }
